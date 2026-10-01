@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Redirecionando…</title>
+  <script>
+    (function () {
+      var path = window.location.pathname.replace(/^\/+/, "");
+      if (path.indexOf("scale-smart-boost") === 0) return;
+      var target = "https://jpavan77.github.io/scale-smart-boost/" + path;
+      window.location.replace(target + window.location.search + window.location.hash);
+    })();
+  </script>
+</head>
+<body>
+  Redirecionando para o projeto…
+</body>
+</html>
