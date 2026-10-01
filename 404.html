@@ -8,8 +8,9 @@
     (function () {
       var path = window.location.pathname.replace(/^\/+/, "");
       if (path.indexOf("scale-smart-boost") === 0) return;
-      var target = "https://jpavan77.github.io/scale-smart-boost/" + path;
-      window.location.replace(target + window.location.search + window.location.hash);
+      var suffix = path ? "#/" + path : "";
+      var target = "https://jpavan77.github.io/scale-smart-boost/" + suffix;
+      window.location.replace(target + window.location.search);
     })();
   </script>
 </head>
